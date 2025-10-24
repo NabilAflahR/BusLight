@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->foreignId('schedule_id')->constrained('schedules')->onDelete('cascade');
-            $table->string('seat_number')->nullable(); // bisa juga dibuat ke table terpisah jika multiple seats
             $table->decimal('total_price', 10, 2);
             $table->string('booking_code')->unique();
             $table->enum('status', ['pending', 'paid', 'cancelled'])->default('pending');

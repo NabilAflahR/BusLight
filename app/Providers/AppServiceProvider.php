@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Providers;
-
+use Midtrans\Config as MidtransConfig;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider

@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('no_license')->unique();
             $table->string('name');
             $table->integer('capacity');
+            $table->string('type');
             $table->timestamps();
         });
     }

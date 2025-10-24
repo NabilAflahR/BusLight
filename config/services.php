@@ -14,6 +14,10 @@ return [
     |
     */
 
+    'xendit' => [
+        'secret_key' => env('XENDIT_SECRET_KEY'),
+    ],
+
     'postmark' => [
         'token' => env('POSTMARK_TOKEN'),
     ],
